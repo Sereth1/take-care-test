@@ -4,8 +4,7 @@ import { useSelectedPatient } from "../helpers/SelectedPatientContext";
 const LabResults = () => {
   const { selectedPatient } = useSelectedPatient();
 
-  if (!selectedPatient || !selectedPatient.lab_results)
-    return <div>No lab results available</div>;
+  if (!selectedPatient || !selectedPatient.lab_results) return <div></div>;
 
   return (
     <div className="bg-white rounded-lg shadow-md p-4 mx-auto max-w-xs h-72 mt-10">
