@@ -2,11 +2,17 @@ import React from "react";
 import BloodPressureChart from "./BloodPressureChart";
 import { useSelectedPatient } from "../helpers/SelectedPatientContext";
 import Image from "next/image";
+import LoadingSpinner from "../helpers/LoadingSpinner";
 
 const DiagnosisHistory = () => {
   const { selectedPatient } = useSelectedPatient();
 
-  if (!selectedPatient) return <div></div>;
+  if (!selectedPatient)
+    return (
+      <div>
+        <LoadingSpinner />
+      </div>
+    );
 
   const latestDiagnosis = selectedPatient.diagnosis_history[0];
 

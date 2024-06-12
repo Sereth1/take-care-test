@@ -6,7 +6,7 @@ import { useSelectedPatient } from "../helpers/SelectedPatientContext";
 const PatientsList = () => {
   const patients = usePatient();
   const { setSelectedPatient } = useSelectedPatient();
-  if (!patients) return <div>Loading...</div>;
+  if (!patients) return <div></div>;
   if (patients.length === 0) return <div>Patients not found</div>;
 
   return (

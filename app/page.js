@@ -5,7 +5,10 @@ import LabResults from "@/components/common/LabResults";
 import PatientProfile from "@/components/common/PatientProfile";
 import PatientsList from "@/components/common/PatientsList";
 import { PatientProvider } from "@/components/helpers/PatientContext";
-import { SelectedPatientProvider } from "@/components/helpers/SelectedPatientContext";
+import {
+  SelectedPatientProvider,
+  useSelectedPatient,
+} from "@/components/helpers/SelectedPatientContext";
 
 export default function Home() {
   return (
