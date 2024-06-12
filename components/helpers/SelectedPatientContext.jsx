@@ -8,7 +8,7 @@ export const useSelectedPatient = () => {
 
 export const SelectedPatientProvider = ({ children }) => {
   const [selectedPatient, setSelectedPatient] = useState(null);
-  console.log(selectedPatient);
+
   return (
     <SelectedPatientContext.Provider
       value={{ selectedPatient, setSelectedPatient }}
