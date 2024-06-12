@@ -1,6 +1,6 @@
 export const navItems = [
   {
-    href: "/overview",
+    href: "/",
     src: "/icons/navBar/home.svg",
     alt: "Overview",
     label: "Overview",
@@ -12,19 +12,19 @@ export const navItems = [
     label: "Patients",
   },
   {
-    href: "/schedule",
+    href: "/",
     src: "/icons/navbar/home.svg",
     alt: "Schedule",
     label: "Schedule",
   },
   {
-    href: "/message",
+    href: "/",
     src: "/icons/navbar/home.svg",
     alt: "Message",
     label: "Message",
   },
   {
-    href: "/transactions",
+    href: "/",
     src: "/icons/navbar/home.svg",
     alt: "Transactions",
     label: "Transactions",

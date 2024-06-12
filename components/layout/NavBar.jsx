@@ -16,71 +16,21 @@ const Navbar = () => {
         </span>
       </div>
       <div className="flex items-center space-x-8">
-        <Link href="/overview" passHref>
-          <div className="flex items-center text-gray-600 hover:bg-navBarHover hover:rounded-full p-2 box-border cursor-pointer">
-            <div className="relative w-[30px] h-[30px] mr-2">
-              <Image
-                src="/icons/navBar/home.svg"
-                alt="Overview"
-                layout="fill"
-                objectFit="contain"
-              />
+        {navItems.map((item, i) => (
+          <Link key={i} href={item.href} passHref>
+            <div className="flex items-center text-gray-600 hover:bg-navBarHover hover:rounded-full p-2 box-border cursor-pointer">
+              <div className="relative w-[30px] h-[30px] mr-2">
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
+              {item.label}
             </div>
-            Overview
-          </div>
-        </Link>
-        <Link href="/" passHref>
-          <div className="flex items-center text-gray-600 hover:bg-navBarHover hover:rounded-full p-2 box-border cursor-pointer">
-            <div className="relative w-[30px] h-[30px] mr-2">
-              <Image
-                src="/icons/navBar/patients.png"
-                alt="Patients"
-                layout="fill"
-                objectFit="contain"
-              />
-            </div>
-            Patients
-          </div>
-        </Link>
-        <Link href="/schedule" passHref>
-          <div className="flex items-center text-gray-600 hover:bg-navBarHover hover:rounded-full p-2 box-border cursor-pointer">
-            <div className="relative w-[30px] h-[30px] mr-2">
-              <Image
-                src="/icons/navbar/home.svg"
-                alt="Schedule"
-                layout="fill"
-                objectFit="contain"
-              />
-            </div>
-            Schedule
-          </div>
-        </Link>
-        <Link href="/message" passHref>
-          <div className="flex items-center text-gray-600 hover:bg-navBarHover hover:rounded-full p-2 box-border cursor-pointer">
-            <div className="relative w-[30px] h-[30px] mr-2">
-              <Image
-                src="/icons/navbar/home.svg"
-                alt="Message"
-                layout="fill"
-                objectFit="contain"
-              />
-            </div>
-            Message
-          </div>
-        </Link>
-        <Link href="/transactions" passHref>
-          <div className="flex items-center text-gray-600 hover:bg-navBarHover hover:rounded-full p-2 box-border cursor-pointer">
-            <div className="relative w-[30px] h-[30px] mr-2">
-              <Image
-                src="/icons/navbar/home.svg"
-                alt="Transactions"
-                layout="fill"
-                objectFit="contain"
-              />
-            </div>
-            Transactions
-          </div>
-        </Link>
+          </Link>
+        ))}
       </div>
       <div className="flex items-center">
         <div className="relative w-[40px] h-[40px] mr-4">
