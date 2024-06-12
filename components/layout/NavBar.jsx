@@ -23,8 +23,8 @@ const Navbar = () => {
               <Image
                 src={item.src}
                 alt={item.alt}
-                width={20}
-                height={20}
+                width={30}
+                height={30}
                 className="mr-2"
               />
               {item.label}
@@ -47,15 +47,15 @@ const Navbar = () => {
         <div className="border border-black-600 mx-3 h-10"></div>
         <Image
           src="/icons/navBar/gear.svg"
-          alt="Dr. Jose Simmons"
+          alt="Settings"
           width={19}
           height={20}
           className="rounded-full mr-4"
         />
         <Image
           src="/icons/navBar/dots.svg"
-          alt="Dr. Jose Simmons"
-          width={4}
+          alt="More options"
+          width={1}
           height={20}
         />
       </div>

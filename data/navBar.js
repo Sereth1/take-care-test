@@ -13,19 +13,19 @@ export const navItems = [
   },
   {
     href: "/schedule",
-    src: "/icons/navbar/calender.png",
+    src: "/icons/navbar/home.svg",
     alt: "Schedule",
     label: "Schedule",
   },
   {
     href: "/message",
-    src: "/icons/navbar/mes.png",
+    src: "/icons/navbar/home.svg",
     alt: "Message",
     label: "Message",
   },
   {
     href: "/transactions",
-    src: "/icons/navbar/trans.png",
+    src: "/icons/navbar/home.svg",
     alt: "Transactions",
     label: "Transactions",
   },
